@@ -13,3 +13,5 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER=`whoami`
 
 alias py="python3.7"
+alias bye="shutdown now"
+alias restart="shutdown -r"
