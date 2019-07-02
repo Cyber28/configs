@@ -34,6 +34,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set nu
+set guifont=Noto\ Mono:h14
 
 autocmd FileType html set tabstop=2
 autocmd FileType html set shiftwidth=2
