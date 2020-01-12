@@ -27,5 +27,6 @@ alias yardim="man"
 alias pipupdate="pip list --outdated --format=freeze | tee pipupdate_backup.txt | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
 alias pls="fuck"
 alias nuke="rm ~/.zsh_history && exit"
+alias whereami="echo $PWD"
 
 eval $(thefuck --alias)
