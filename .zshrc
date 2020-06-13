@@ -8,9 +8,9 @@ source $ZSH/oh-my-zsh.sh
 
 DEFAULT_USER=`whoami`
 
-export PATH=/usr/lib/dart/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$PATH:/usr/local/go/bin
+
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 alias py="python3.7"
 alias bye="shutdown now"
@@ -24,9 +24,7 @@ alias vqt="nvim-qt"
 alias run="yarn run"
 alias electron="electron3"
 alias yardim="man"
-alias pipupdate="pip list --outdated --format=freeze | tee pipupdate_backup.txt | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
+alias pipupdateall="pip list --outdated --format=freeze | tee pipupdate_backup.txt | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
 alias pls="fuck"
 alias nuke="rm ~/.zsh_history && exit"
-alias whereami="echo $PWD"
 
-eval $(thefuck --alias)
